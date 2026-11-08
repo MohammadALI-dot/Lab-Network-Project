@@ -1,0 +1,27 @@
+stat,title,substat_title,players
+goals,Top scorer,Penalty goals,163
+goal_assist,Assists,Expected assist (xA),137
+total_scoring_att,Shots per 90,Shot conversion rate,314
+ontarget_scoring_att,Shots on target per 90,Shots on target,254
+expected_goals,Expected goals (xG),Goals,400
+expected_assists,Expected assist (xA),Assists,488
+big_chance_created,Big chances created,Total assists,208
+total_att_assist,Chances created,Chances created per 90,373
+won_contest,Successful dribbles per 90,Dribble percentage,299
+accurate_pass,Accurate passes per 90,Pass success,349
+accurate_long_balls,Accurate long balls per 90,Successful long balls %,305
+total_tackle,Tackles per 90,Total tackles,328
+interception,Interceptions per 90,Total interceptions,306
+effective_clearance,Clearances per 90,Total clearances,336
+outfielder_block,Blocks per 90,Total blocks,224
+ball_recovery,Recoveries per 90,Total recoveries,349
+poss_won_att_3rd,Possession won final 3rd per 90,Possession won midfield per 90,247
+fouls,Fouls committed per 90,Yellow cards,323
+yellow_card,Yellow cards,Red cards,279
+red_card,Red cards,Yellow cards,31
+saves,Saves per 90,Total saves,21
+clean_sheet,Clean sheets,Goals conceded,21
+goals_conceded,Goals conceded per 90,Goals conceded,21
+penalty_won,Penalties won,Fouled per 90,26
+penalty_conceded,Penalties conceded,Total matches,33
+mins_played,Minutes played,Total matches,490

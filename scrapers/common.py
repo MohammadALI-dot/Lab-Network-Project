@@ -9,20 +9,6 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LOG_FILE = os.path.join(ROOT, "network", "request_log.csv")
 _robots = {}
 
-def allowed(url):
-    """Return True if the site's robots.txt allows us to fetch this URL."""
-    p = urlparse(url)
-    base = f"{p.scheme}://{p.netloc}"
-    if base not in _robots:
-        rp = robotparser.RobotFileParser()
-        rp.set_url(base + "/robots.txt")
-        try:
-            rp.read()
-        except Exception:
-            pass
-        _robots[base] = rp
-    return _robots[base].can_fetch(UA, url)
-
 def log_request(method, url, status, nbytes, seconds):
     os.makedirs(os.path.dirname(LOG_FILE), exist_ok=True)
     new = not os.path.exists(LOG_FILE)
@@ -32,6 +18,24 @@ def log_request(method, url, status, nbytes, seconds):
             w.writerow(["time", "method", "url", "status", "bytes", "seconds"])
         w.writerow([datetime.now().isoformat(timespec="seconds"),
                     method, url, status, nbytes, round(seconds, 3)])
+
+def allowed(url):
+    """True if the site's robots.txt allows this URL (fetched with our own User-Agent)."""
+    p = urlparse(url)
+    base = f"{p.scheme}://{p.netloc}"
+    if base not in _robots:
+        rp = robotparser.RobotFileParser()
+        robots_url = base + "/robots.txt"
+        try:
+            start = time.time()
+            r = requests.get(robots_url, headers={"User-Agent": UA}, timeout=15)
+            log_request("robots", robots_url, r.status_code, len(r.content), time.time() - start)
+            # no usable robots.txt (non-200) means nothing is disallowed
+            rp.parse(r.text.splitlines() if r.status_code == 200 else [])
+        except Exception:
+            rp.parse([])
+        _robots[base] = rp
+    return _robots[base].can_fetch(UA, url)
 
 def polite_get(session, url, method, delay=2.0):
     """GET a URL if robots.txt allows it, wait `delay` seconds, and log it."""
