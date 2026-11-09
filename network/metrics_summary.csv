@@ -1,2 +1,4 @@
 method,time_s,bandwidth_KB,packets,tcp_connections,peak_open_connections,page_requests,all_logged_requests,avg_latency_ms,logged_body_KB
-api,59.3,390.1,617.0,2.0,1.0,26.0,27.0,191.0,3163.5
+bs4,67.3,2739.0,3643.3,2.0,1.0,26.0,27.0,329.6,15982.7
+api,57.6,375.5,598.0,2.0,1.0,26.0,27.0,151.3,3163.5
+selenium,165.4,80449.4,80609.3,149.0,54.7,26.0,27.0,3350.0,16760.4

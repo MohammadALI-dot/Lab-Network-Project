@@ -1,0 +1,45 @@
+  mins_played: 490 players (9.1 s)
+  filter Striker: 69 players
+  filter Winger: 67 players
+  filter Attacking Midfielder: 24 players
+  filter Midfielder: 125 players
+  filter Fullback: 78 players
+  filter Center-back: 91 players
+  goals: 165 players (4.5 s)
+  goal_assist: 138 players (3.3 s)
+  total_scoring_att: 318 players (5.6 s)
+  ontarget_scoring_att: 257 players (2.9 s)
+  expected_goals: 401 players (2.9 s)
+  expected_assists: 488 players (3.6 s)
+  big_chance_created: 211 players (3.1 s)
+  total_att_assist: 375 players (3.0 s)
+  won_contest: 301 players (2.7 s)
+  accurate_pass: 352 players (4.0 s)
+  accurate_long_balls: 309 players (3.0 s)
+  total_tackle: 331 players (4.2 s)
+  interception: 310 players (3.9 s)
+  effective_clearance: 341 players (3.1 s)
+  outfielder_block: 226 players (3.6 s)
+  ball_recovery: 352 players (3.0 s)
+  poss_won_att_3rd: 250 players (2.9 s)
+  fouls: 326 players (2.9 s)
+  yellow_card: 281 players (2.8 s)
+  red_card: 31 players (3.1 s)
+  saves: 21 players (2.8 s)
+  clean_sheet: 21 players (2.9 s)
+  goals_conceded: 21 players (3.5 s)
+  penalty_won: 26 players (3.1 s)
+  penalty_conceded: 33 players (3.4 s)
+
+=== SUMMARY (SELENIUM) ===
+players: 491 | columns: 56
+position_group
+Midfielder              125
+Center-back              91
+Fullback                 78
+Striker                  69
+Winger                   67
+no_filter                37
+Attacking Midfielder     24
+page loads: 26 | time: 168.7 s
+saved: /home/mhamadali/projectLabNetwork/data/selenium_data.csv

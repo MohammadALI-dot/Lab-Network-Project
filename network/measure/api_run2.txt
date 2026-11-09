@@ -1,0 +1,32 @@
+  goals: 165 players
+  goal_assist: 138 players
+  total_scoring_att: 318 players
+  ontarget_scoring_att: 257 players
+  expected_goals: 401 players
+  expected_assists: 488 players
+  big_chance_created: 211 players
+  total_att_assist: 375 players
+  won_contest: 301 players
+  accurate_pass: 352 players
+  accurate_long_balls: 309 players
+  total_tackle: 331 players
+  interception: 310 players
+  effective_clearance: 341 players
+  outfielder_block: 226 players
+  ball_recovery: 352 players
+  poss_won_att_3rd: 250 players
+  fouls: 326 players
+  yellow_card: 281 players
+  red_card: 31 players
+  saves: 21 players
+  clean_sheet: 21 players
+  goals_conceded: 21 players
+  penalty_won: 26 players
+  penalty_conceded: 33 players
+  mins_played: 490 players
+
+=== SUMMARY (API) ===
+players: 491 | columns: 57
+players without position: 0
+requests: 26 | bytes downloaded: 3,239,462 | time: 55.0 s
+saved: /home/mhamadali/projectLabNetwork/data/api_data.csv
