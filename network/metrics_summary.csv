@@ -1,0 +1,2 @@
+method,time_s,bandwidth_KB,packets,tcp_connections,peak_open_connections,page_requests,all_logged_requests,avg_latency_ms,logged_body_KB
+api,59.3,390.1,617.0,2.0,1.0,26.0,27.0,191.0,3163.5
