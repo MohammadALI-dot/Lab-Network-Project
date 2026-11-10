@@ -5,3 +5,12 @@ normal,Selenium (browser),"loaded, title: Top scorer - LaLiga 2026/2027 ",8.0
 normal2,API (JSON file),HTTP 200,0.4
 normal2,BS4 (HTML page),HTTP 200,0.5
 normal2,Selenium (browser),"loaded, title: Top scorer - LaLiga 2026/2027 ",8.1
+deny,API (JSON file),ConnectionError,40.2
+deny,BS4 (HTML page),ConnectTimeout,40.2
+deny,Selenium (browser),TimeoutException: Message: timeout: Timed out receiving message from renderer:,20.0
+reject,API (JSON file),ConnectionError,0.1
+reject,BS4 (HTML page),ConnectionError,0.2
+reject,Selenium (browser),WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED,0.6
+after,API (JSON file),HTTP 200,0.2
+after,BS4 (HTML page),HTTP 200,0.3
+after,Selenium (browser),"loaded, title: Top scorer - LaLiga 2026/2027 ",4.3
