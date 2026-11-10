@@ -3,3 +3,9 @@ __pycache__/
 .ipynb_checkpoints/
 *.pyc
 *.pcap
+
+fotmob_page.html
+sample.json
+understat_page.html
+data/samples/
+notebooks/ml_analysis.html
