@@ -2,3 +2,6 @@ condition,method,outcome,seconds
 normal,API (JSON file),HTTP 200,0.4
 normal,BS4 (HTML page),HTTP 200,0.8
 normal,Selenium (browser),"loaded, title: Top scorer - LaLiga 2026/2027 ",8.0
+normal2,API (JSON file),HTTP 200,0.4
+normal2,BS4 (HTML page),HTTP 200,0.5
+normal2,Selenium (browser),"loaded, title: Top scorer - LaLiga 2026/2027 ",8.1
