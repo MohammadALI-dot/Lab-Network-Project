@@ -1,0 +1,12 @@
+requests
+beautifulsoup4
+lxml
+selenium>=4.6
+pandas
+numpy
+scikit-learn
+joblib
+matplotlib
+seaborn
+jupyter
+nbformat
