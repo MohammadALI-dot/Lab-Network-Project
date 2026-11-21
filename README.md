@@ -4,7 +4,7 @@ A lab project that collects the same football player statistics from one website
 
 * **Target site:** FotMob, La Liga 2026/2027 (26 statistics, about 490 players)
 * **Tested on:** Ubuntu 24.04 under WSL2 (Windows), Python 3.12
-* **Author / course:** `<your name>` / `<course name>`
+* **Author / course:** `MhamadAli - Mhamad Farhat - Mehde Ayoub` / `Lab Network Programming`
 
 ---
 
